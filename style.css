@@ -2,13 +2,13 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* background muda a cor do fundo do cabeçalho*/ 
 header {
-	background: #BBBBBB;
+	background: #0e2a43;
 	padding: 5px 0;
 }
 
 /*width diminua e aumenta a distancia das palavras do cabeçalho*/
-
 .caixa {
 	position: relative;
 	width: 800px;
@@ -16,7 +16,6 @@ header {
 }
 
 /*top diminui a fonte do cabeçalho*/ 
-
 nav {
 	position: absolute;
 	top: 30px; 
@@ -27,17 +26,17 @@ nav li {
 	display: inline;
 	margin: 0 0 0 15px;
 }
-
+/*color muda a cor das letras do cabeçalho*/
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
 }
-
+/*color muda a cor das letras do cabeçalho quando passa o mouse encima*/
 nav a:hover {
-	color: #C78C19;
+	color: #b4dfa1;
 	text-decoration: underline;
 }
 
@@ -142,8 +141,8 @@ table {
 }
 
 thead {
-	background: #555555;
-	color: white;
+	background: #bb1212;
+	color: rgb(255, 255, 255);
 	font-weight: bold;
 }
 
@@ -167,7 +166,7 @@ td, th {
 
 .principal {
 	padding: 3em 0;
-	background: #FEFEFE;
+	background: #b4dfa1;
 	width: 940px;
 	margin: 0 auto;
 }
@@ -189,10 +188,10 @@ td, th {
 	float: left;
 	margin: 0 20px 20px 0;
 }
-
+/*background muda as cores do degrade*/
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
+	background: linear-gradient(#b4dfa1, #59704f);
 }
 
 .mapa-conteudo {
@@ -204,10 +203,11 @@ td, th {
 	margin: 0 0 2em;
 	text-align: center;
 }
+/*background muda as cores do fundo*/
 
 .beneficios {
 	padding: 3em 0;
-	background: #888888;
+	background: #59704f;
 }
 
 .conteudo-beneficios {
