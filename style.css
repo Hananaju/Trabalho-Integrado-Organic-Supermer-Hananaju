@@ -5,7 +5,7 @@ body {
 /* background muda a cor do fundo do cabeçalho*/ 
 header {
 	background: #0e2a43;
-	padding: 5px 0;
+	padding: 8px 0;
 }
 
 /*width diminua e aumenta a distancia das palavras do cabeçalho*/
@@ -93,7 +93,7 @@ footer {
 	background: url("bg.png") no-repeat;
 	background-size: cover;
 	background-color: #0e2a43;
-	background: linear-gradient(#4f6570, #0e2a43);
+	background: linear-gradient(#0e2a43, #4a6378);
 	padding: 40px 0;
   }
 
@@ -198,7 +198,7 @@ td, th {
 /*background muda as cores do degrade*/
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#b4dfa1, #4f6570);
+	background: linear-gradient(#b4dfa1, #284761);
 }
 
 .mapa-conteudo {
@@ -214,7 +214,7 @@ td, th {
 
 .beneficios {
 	padding: 3em 0;
-	background: #4f6570;
+	background: #0e2a43;
 }
 
 .conteudo-beneficios {
