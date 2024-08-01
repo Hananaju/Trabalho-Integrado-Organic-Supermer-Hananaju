@@ -84,15 +84,22 @@ nav a:hover {
 	font-weight: bold;
 	margin-top: 10px;
 }
-
+/*no-repeat: A imagem não será repetida.
+center: A imagem será centralizada.
+cover: A imagem irá cobrir todo o elemento, mantendo as proporções e possivelmente cortando partes.
+background-size: Define o tamanho da imagem (cover, contain).*/
 footer {
 	text-align: center;
-	background: url("bg.jpg");
+	background: url("bg.png") no-repeat;
+	background-size: cover;
+	background-color: #0e2a43;
+	background: linear-gradient(#4f6570, #0e2a43);
 	padding: 40px 0;
-}
+  }
 
+/*color muda a cor das letras do copyright*/
 .copyright {
-	color: #0f0808;
+	color: #b4a9a9;
 	font-size: 13px;
 	margin: 20px 0 0;
 }
@@ -191,7 +198,7 @@ td, th {
 /*background muda as cores do degrade*/
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#b4dfa1, #59704f);
+	background: linear-gradient(#b4dfa1, #4f6570);
 }
 
 .mapa-conteudo {
@@ -207,7 +214,7 @@ td, th {
 
 .beneficios {
 	padding: 3em 0;
-	background: #59704f;
+	background: #4f6570;
 }
 
 .conteudo-beneficios {
