@@ -42,7 +42,6 @@ nav a:hover {
 
 .produtos {
 	width: 940px;
-	margin: 0 auto;
 	padding: 50px 0;
 }
 
@@ -93,7 +92,7 @@ footer {
 	background: url("bg.png") no-repeat;
 	background-size: cover;
 	background-color: #0e2a43;
-	background: linear-gradient(#0e2a43, #4a6378);
+	background: linear-gradient(#0e2a43, #0e2a43);
 	padding: 40px 0;
   }
 
@@ -160,8 +159,9 @@ td, th {
 
 
 /* css da página inicial */
-.banner {
-	width: 100%;
+.fundo {
+ text-align: center;
+ background-color: #b4dfa1;
 }
 
 .titulo-principal {
@@ -172,9 +172,8 @@ td, th {
 }
 
 .principal {
-	padding: 3em 0;
+	padding: 4em 0;
 	background: #b4dfa1;
-	width: 940px;
 	margin: 0 auto;
 }
 
@@ -198,7 +197,7 @@ td, th {
 /*background muda as cores do degrade*/
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#b4dfa1, #284761);
+	background: linear-gradient(#b4dfa1, #0e2a43);
 }
 
 .mapa-conteudo {
