@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Organic Supermercado</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+            margin-top: 30px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h2 {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var questions = document.querySelectorAll('.faq-item h2');
+            questions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    var answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="img/logo.png" width="110" height="90">
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produto.html">Produtos</a></li>
+					<li><a href="empresas.html">Empresas</a></li>
+					<li><a href="suporte.html">Suporte</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <div class="container">
+        <h1>FAQ - Perguntas Frequentes</h1>
+
+        <div class="faq-item">
+            <h2>1. Quais são as formas de pagamento aceitas?</h2>
+            <p>Nosso supermercado aceita pagamentos com cartões de crédito e débito, PIX, boleto bancário e dinheiro nas compras realizadas em nossas lojas físicas. Para compras online, aceitamos cartões de crédito, PIX e boleto bancário.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>2. Como posso rastrear meu pedido?</h2>
+            <p>Após a confirmação da compra, você receberá um e-mail com o código de rastreamento e um link para acompanhar o status do seu pedido diretamente pelo site do nosso parceiro de entrega.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>3. Qual é o prazo de entrega?</h2>
+            <p>O prazo de entrega varia de acordo com a sua localização. Durante o processo de compra, você poderá ver o prazo estimado para o seu CEP. Em média, as entregas são realizadas em até 5 dias úteis.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>4. Posso trocar ou devolver um produto?</h2>
+            <p>Sim.
