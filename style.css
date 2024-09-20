@@ -159,7 +159,7 @@ td, th {
 /* css da página inicial */
 .fundo {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #b4dfa1;
 }
 
 .titulo-principal {
@@ -273,79 +273,4 @@ td, th {
     .imagem-beneficios {
         width: 100%; /* Os elementos ocupam 100% da largura disponível */
     }
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    width: 800px; /* Define a largura máxima do conteúdo */
-    margin: 20px auto; /* Centraliza o main na página */
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os itens do formulário */
-}
-
-.input-padrao {
-    width: 100%; /* Faz com que os inputs ocupem toda a largura disponível */
-    max-width: 300px; /* Limita a largura máxima dos inputs */
-    margin-bottom: 15px; /* Espaçamento entre os inputs */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.enviar {
-    background-color: #28a745; /* Cor do botão */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.enviar:hover {
-    background-color: #218838; /* Cor do botão ao passar o mouse */
-}
-
-table {
-    width: 100%;
-    max-width: 400px; /* Limita a largura da tabela */
-    margin: 20px auto; /* Centraliza a tabela */
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
 }
