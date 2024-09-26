@@ -163,53 +163,66 @@ td, th {
 }
 
 .titulo-principal {
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
+    font-size: 2em; /* Tamanho do título */
+    text-align: center; /* Centraliza o título */
+    color: #e7edf3; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
 .principal {
+	text-align: center;
     padding: 4em 0;
-    background: #b4dfa1;
+    background: linear-gradient(#b4dfa1, #0e2a43) ;
     margin: 0 auto;
+	padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .principal p {
-    margin: 0 0 1em;
+	font-size: 1.1em; /* Tamanho da fonte do texto */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    color: #ffffff; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
 }
 
 .principal strong {
     font-weight: bold;
 }
 
-.principal em {
-    font-style: italic;
+strong {
+    color: #fbff00; /* Destaque em vermelho para informações importantes */
 }
 
+.principal p strong {
+    color: #2980b9; /* Destaque para créditos */
+}
+
+.principal h3 {
+    font-size: 1.5em; /* Tamanho da fonte do subtítulo */
+    color:aliceblue; /* Cor do subtítulo */
+    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+}
+
+.principal ul {
+    list-style-type: disc; /* Estilo da lista com discos */
+    margin-left: 20px; /* Margem à esquerda para as listas */
+    color: #e0e4e7; /* Cor da lista */
+}
+
+.principal li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    font-size: 1.1em; /* Tamanho da fonte dos itens */
+}
 .utensilios {
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
 }
 
-.mapa {
-    padding: 3em 0;
-    background: linear-gradient(#b4dfa1, #0e2a43);
-}
-
-.mapa-conteudo {
-    width: 940px;
-    margin: 0 auto;
-}
-
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-}
-
 .beneficios {
     padding: 3em 0;
     background: #0e2a43;
+	color: #ffffff;
 }
 
 .conteudo-beneficios {
@@ -221,6 +234,7 @@ td, th {
     width: 40%;
     display: inline-block;
     vertical-align: top;
+	color: #ffffff;
 }
 
 .itens {
@@ -244,11 +258,6 @@ td, th {
 
 .imagem-beneficios:hover {
     opacity: 0.3;
-}
-
-.video {
-    width: 560px;
-    margin: 2em auto;
 }
 
 @media screen and (max-width: 480px) {

@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Produtos - Barbearia Alura</title>
+		<title>Organic Supermercado</title>
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="style-produtos.css">
+		<link rel="stylesheet" href="style-suporte.css">
+		<link rel="stylesheet" href="style-podutos.css">
 	</head>
 	<body>
 		<header>
@@ -18,7 +19,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="produto.html">Produtos</a></li>
-						<li><a href="empresas.html">Empresas</a></li>
+						<li><a href="cadastro.html">Cadastro</a></li>
 						<li><a href="suporte.html">Suporte</a></li>
 					</ul>
 				</nav>
@@ -28,65 +29,67 @@
 		<main>
 			<ul class="produtos">
 				<li>
-					<h2>Cabelo</h2>
-					<img src="img/cabelo.jpg">
-					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
-					<p class="produto-preco">R$ 25,00</p>
+					<h2>Toddynho</h2>
+					<img src="img/Toddynho.png">
+					<p class="produto-preco">R$ 2,00</p>
+					<button onclick="adicionarAoCarrinho('Toddynho', 2)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Barba</h2>
-					<img src="img/barba.jpg">
-					<p class="produto-descricao">Corte e desenho profissional de barba</p>
-					<p class="produto-preco">R$ 18,00</p>
+					<h2>Toddy</h2>
+					<img src="img/Toddy.png">
+					<p class="produto-preco">R$ 10,00</p>
+					<button onclick="adicionarAoCarrinho('Toddy', 10)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Gin</h2>
+					<img src="img/Gin.png">
+					<p class="produto-preco">R$ 45,00</p>
+					<button onclick="adicionarAoCarrinho('Gin', 45)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Vodka</h2>
+					<img src="img/51 vagabundo.png">
+					<p class="produto-preco">R$ 15,00</p>
+					<button onclick="adicionarAoCarrinho('Vodka', 15)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Batatinha</h2>
+					<img src="img/Batatinha.png">
+					<p class="produto-preco">R$ 5,00</p>
+					<button onclick="adicionarAoCarrinho('Batatinha', 5)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Doritos</h2>
+					<img src="img/Doritos.png">
+					<p class="produto-preco">R$ 7,00</p>
+					<button onclick="adicionarAoCarrinho('Doritos', 7)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Filé Mignon</h2>
+					<img src="img/Filé Mignon.png">
+					<p class="produto-preco">R$ 50,00/kg</p>
+					<button onclick="adicionarAoCarrinho('Filé Mignon', 50)">Adicionar ao Carrinho</button>
 				</li>
 				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
-				</li>
-				<li>
-					<h2>Cabelo + Barba</h2>
-					<img src="img/cabelo+barba.jpg">
-					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
-					<p class="produto-preco">R$ 35,00</p>
+					<h2>Sabonete Liquido</h2>
+					<img src="img/Johnson.png">
+					<p class="produto-preco">R$ 12,00</p>
+					<button onclick="adicionarAoCarrinho('Sabonete Liquido', 12)">Adicionar ao Carrinho</button>
 				</li>
 			</ul>
+
+			<section id="carrinho">
+				<h2>Carrinho de Compras</h2>
+				<ul id="itensCarrinho"></ul>
+				<p>Total: R$ <span id="totalCarrinho">0</span>,00</p>
+			</section>
 		</main>
 
 		<footer>
 			<img src="img/logo.png" width="110" height="90">
 			<p class="copyright">&copy; Copyright Organic Supermercado - 2024</p>
 		</footer>
+
+		<script src="carrinho.js"></script>
 	</body>
 </html>
